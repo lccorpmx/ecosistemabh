@@ -3,6 +3,8 @@ import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { ArrowLeftIcon,ArrowRightIcon } from '@heroicons/react/24/solid'
 import promo from '../public/prueba.jpg'
+import Image from 'next/image'
+
 
 const Slideshow = () => {
 	//Array of Images
@@ -35,10 +37,7 @@ const Slideshow = () => {
 			<Zoom {...zoomInProperties}>
 				{images.map((each, index) => (
 					<div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
-						<img
-							className="w-screen"
-							src={each}
-						/>
+            <Image src={each} className="w-screen" height={1080} width={1080} alt="Logo"/>
                         <p className="absolute md:top-80 top-40 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">Promos del Dia</p>
 					</div>
 				))}
