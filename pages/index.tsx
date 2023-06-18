@@ -13,11 +13,11 @@ export default function Bienvenida() {
   return (
     <div className="bg-yellow-400 h-screen flex flex-col justify-center items-center">
       <Head>
-        <title>Inicio</title>
+        <title>BeeHigh</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="rounded-xl border-4 border-white">
+      <div className="rounded-xl border-4 border-white p">
         <Image className='rounded-xl w-full'
           src="/prueba.jpg"
           alt="Mi imagen"
@@ -26,7 +26,7 @@ export default function Bienvenida() {
         />
       </div>
 
-      <Link href="/home">
+      <Link href="/home" className='pt-4'>
         <BotonPersonalizado texto="Continuar" colorF="bg-black" colorT='text-white'></BotonPersonalizado>
       </Link>
       

@@ -7,6 +7,7 @@ import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/AbejaAmarilla.png'
 import promo from '../public/prueba.jpg'
+import SlideShow from '../components/slideShow'
 
 
 export default function Home() {
@@ -16,11 +17,14 @@ export default function Home() {
 
 
         <div className='flex flex-col items-center justify-center mt-8'>
-            <Image src={abejaAmarilla} alt="Logo" width={220}/>
+            <Image src={abejaAmarilla} alt="Logo" width={180}/>
             <h1 className='text-6xl'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
             <p className='text-center text-2xl'>SI ES LA SEMANA<br/>DE TU<br/>CUMPLEAÑOS</p>
+            <Link href="/popup" className='pt-4'>
             <BotonPersonalizado texto="Haz clic aquí" colorF="bg-yellow-400" colorT='text-black'></BotonPersonalizado>
+             </Link>
+            
         </div>
 
         <div className='bg-white mt-8 p-2 flex flex-col items-center justify-center'>
@@ -35,6 +39,10 @@ export default function Home() {
                   <BotonPersonalizado texto='VER TODAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                </Link>
             </div>
+        </div>
+
+        <div>
+         <SlideShow></SlideShow>
         </div>
      </>
     )
