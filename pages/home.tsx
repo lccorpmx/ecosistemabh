@@ -7,7 +7,7 @@ import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/AbejaAmarilla.png'
 import promo from '../public/prueba.jpg'
-import SlideShow from '../components/slideShow'
+
 
 
 export default function Home() {
@@ -39,10 +39,6 @@ export default function Home() {
                   <BotonPersonalizado texto='VER TODAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                </Link>
             </div>
-        </div>
-
-        <div>
-         <SlideShow></SlideShow>
         </div>
      </>
     )
