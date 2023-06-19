@@ -22,12 +22,12 @@ const Slideshow = () => {
 		transitionDuration: 300,
 		infinite: true,
 		prevArrow: (
-			<div className="ml-10 top-40 md:top-72">
+			<div className="ml-10 top-10 md:top-72">
 				<ArrowLeftIcon className="h-8 w-8 text-white cursor-pointer" />
 			</div>
 		),
 		nextArrow: (
-				<div className="mr-10 top-40 md:top-72">
+				<div className="mr-10 top-10 md:top-72">
 				   <ArrowRightIcon className="h-8 w-8 text-white cursor-pointer" />
 			    </div>
 		),
@@ -38,7 +38,7 @@ const Slideshow = () => {
 				{images.map((each, index) => (
 					<div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
             <Image src={each} className="w-screen" height={1080} width={1080} alt="Logo"/>
-                        <p className="absolute md:top-80 top-40 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">Promos del Dia</p>
+                        <p className="absolute md:top-80 top-10 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">TODAS LAS <span className='text-yellow-400'>PROMOS</span></p>
 					</div>
 				))}
 			</Zoom>
