@@ -1,14 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BotonPersonalizado = ({ texto, colorF, colorT }) => {
+interface BotonPersonalizadoProps {
+  texto: string;
+  colorF: string;
+  colorT: string;
+}
+
+const BotonPersonalizado: React.FC<BotonPersonalizadoProps> = ({
+  texto,
+  colorF,
+  colorT,
+}) => {
   const claseColorFondo = `${colorF}`;
   const claseColorTexto = `${colorT}`;
 
   return (
-    <button
-      className={`${claseColorTexto} rounded-full py-2 px-4 ${claseColorFondo}`}
-    >
+    <button className={`${claseColorTexto} rounded-full py-2 px-4 ${claseColorFondo}`}>
       {texto}
     </button>
   );
