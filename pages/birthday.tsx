@@ -8,12 +8,11 @@ import Popup from "../components/popup"
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Index() {
+export default function Birthday() {
 
-  console.log("hola")
   return (
     <div>
-      <Popup imagen="/prueba.jpg"></Popup>
+      <Popup imagen="/cumple.jpg"></Popup>
     </div>
   )
 }

@@ -6,7 +6,9 @@ import Link from 'next/link';
 import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/AbejaAmarilla.png'
-import promo from '../public/prueba.jpg'
+import promo from '../public/promo1.jpg'
+import promoUno from '../public/promo2.jpg'
+import promoDos from '../public/promo3.jpg'
 
 
 
@@ -21,7 +23,7 @@ export default function Home() {
             <h1 className='text-6xl'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
             <p className='text-center text-2xl'>SI ES LA SEMANA<br/>DE TU<br/>CUMPLEAÑOS</p>
-            <Link href="/popup" className='pt-4'>
+            <Link href="/birthday" className='pt-4'>
             <BotonPersonalizado texto="Haz clic aquí" colorF="bg-yellow-400" colorT='text-black'></BotonPersonalizado>
              </Link>
             
@@ -31,8 +33,8 @@ export default function Home() {
             <div><h2 className='text-center text-black text-6xl'>PROMOS DEL <span className='text-yellow-400'><br />DIA</span></h2></div>
             <div className='grid grid-cols-3 gap-2 m-2'>
                <div><Image src={promo} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={promo} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={promo} alt='promo' className='rounded-xl'></Image></div>
+               <div><Image src={promoUno} alt='promo' className='rounded-xl'></Image></div>
+               <div><Image src={promoDos} alt='promo' className='rounded-xl'></Image></div>
             </div>
             <div>
                <Link href="/allpromos">
