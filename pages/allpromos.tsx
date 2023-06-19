@@ -5,7 +5,6 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
 import Header from '../components/header'
 import React, {useState} from 'react';
-import Carrusel from '../components/carrusel'
 import SlideShow from '../components/slideShow'
 
 export default function AllPromos() {
