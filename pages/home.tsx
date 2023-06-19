@@ -9,7 +9,7 @@ import abejaAmarilla from '../public/AbejaAmarilla.png'
 import promo from '../public/promo1.jpg'
 import promoUno from '../public/promo2.jpg'
 import promoDos from '../public/promo3.jpg'
-
+import PCatalogo from '../components/productsCatalogo'
 
 
 export default function Home() {
@@ -36,10 +36,15 @@ export default function Home() {
                <div><Image src={promoUno} alt='promo' className='rounded-xl'></Image></div>
                <div><Image src={promoDos} alt='promo' className='rounded-xl'></Image></div>
             </div>
-            <div>
+            <div className='pb-6'>
                <Link href="/allpromos">
                   <BotonPersonalizado texto='VER TODAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                </Link>
+            </div>
+
+            <div className='bg-black w-full pt-8'>
+               <p className='text-center text-yellow-400 text-6xl'>CATALOGO</p>
+               <PCatalogo producto='Cart 98%'></PCatalogo>
             </div>
         </div>
      </>
