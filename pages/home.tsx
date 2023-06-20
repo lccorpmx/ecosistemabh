@@ -42,9 +42,10 @@ export default function Home() {
                </Link>
             </div>
 
-            <div className='bg-black w-full pt-8'>
+            <div className='bg-black w-full pt-6'>
                <p className='text-center text-yellow-400 text-6xl'>CATALOGO</p>
-               <PCatalogo producto='Cart 98%'></PCatalogo>
+               <PCatalogo producto='Cart 98%' imagen="/cartNegro.png"></PCatalogo>
+               <PCatalogo producto='Preroll' imagen="/pre.png"></PCatalogo>
             </div>
         </div>
      </>
