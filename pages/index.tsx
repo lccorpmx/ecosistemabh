@@ -5,15 +5,31 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import Popup from "../components/popup"
+import { supabase } from './../lib/supabaseClient';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Index() {
+export default function Index( {data}:{data:any}) {
 
-  console.log("hola")
+
   return (
     <div>
-      <Popup imagen="/prueba.jpg"></Popup>
+      <Popup imagen={data[0].linkimage}></Popup>
     </div>
   )
+}
+export async function getServerSideProps() {
+  let { data, error } = await supabase.from('popuptable').select();
+
+  console.log(data); // Verificar los datos devueltos en la consola
+
+  if (error) {
+    console.error(error);
+  }
+
+  return {
+    props: {
+      data
+    },
+  };
 }

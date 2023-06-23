@@ -14,17 +14,19 @@ interface CatalogoProps {
 
 export default function productsCatalogo({ producto, imagen }: CatalogoProps) {
   return (
-    <div className='flex justify-center items-center h-screen'>
-      <div className='bg-white w-1/2 h-950
-       rounded-3xl flex flex-col items-center pb-2 pt-2'>
+    <div className='flex justify-center items-center pt-6 pb-6'>
+      <div className='bg-white w-60
+       rounded-3xl flex flex-col items-center p-6'>
         <p className='text-black text-4xl'>{producto}</p>
+        <div>
         <Image
-          className='rounded-xl'
+          className='rounded-xl p-1'
           src={imagen}
           alt='Mi imagen'
-          width={400}
+          width={100}
           height={900}
         />
+        </div>
         <BotonPersonalizado
           texto="Continuar"
           colorF="bg-black"

@@ -15,6 +15,8 @@ const Slideshow = () => {
     "/promo5.jpg",
   ];
 
+  console.log(images)
+
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
     scale: 1,
@@ -41,7 +43,7 @@ const Slideshow = () => {
         {images.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
             <Image src={each} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
-            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">TODAS LAS <span className='text-yellow-400'>PROMOS</span></p>
+            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">TODAS LAS <span className='text-yellow-400'>PROMOS</span></p>
           </div>
         ))}
       </Zoom>

@@ -10,9 +10,10 @@ import promo from '../public/promo1.jpg'
 import promoUno from '../public/promo2.jpg'
 import promoDos from '../public/promo3.jpg'
 import PCatalogo from '../components/productsCatalogo'
+import { supabase } from './../lib/supabaseClient';
 
 
-export default function Home() {
+export default function Home( {data}:{data:any}) {
     return (
      <>
         <Header></Header>
@@ -32,9 +33,9 @@ export default function Home() {
         <div className='bg-white mt-8 p-2 flex flex-col items-center justify-center'>
             <div><h2 className='text-center text-black text-6xl'>PROMOS DEL <span className='text-yellow-400'><br />DIA</span></h2></div>
             <div className='grid grid-cols-3 gap-2 m-2'>
-               <div><Image src={promo} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={promoUno} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={promoDos} alt='promo' className='rounded-xl'></Image></div>
+               <div><Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
+               <div><Image src={data[1].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
+               <div><Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
             </div>
             <div className='pb-6'>
                <Link href="/allpromos">
@@ -44,11 +45,29 @@ export default function Home() {
 
             <div className='bg-black w-full pt-6'>
                <p className='text-center text-yellow-400 text-6xl'>CATALOGO</p>
-               <PCatalogo producto='Cart 98%' imagen="/cartNegro.png"></PCatalogo>
-               <PCatalogo producto='Preroll' imagen="/pre.png"></PCatalogo>
+               <PCatalogo producto='Carts' imagen="/cn.png"></PCatalogo>
+               <PCatalogo producto='Prerolls' imagen="/prerolls.png"></PCatalogo>
+               <PCatalogo producto='Baterias' imagen="/bat.png"></PCatalogo>
             </div>
         </div>
      </>
     )
   }
+
+  export async function getServerSideProps() {
+   let { data, error } = await supabase.from('relevationpromosdb').select();
+ 
+   console.log(data); // Verificar los datos devueltos en la consola
+ 
+   if (error) {
+     console.error(error);
+   }
+ 
+   return {
+     props: {
+       data
+     },
+   };
+ }
+ 
   
