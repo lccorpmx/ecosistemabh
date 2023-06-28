@@ -5,7 +5,11 @@ import promo from '../public/prueba.jpg';
 import Image from 'next/image';
 import React from 'react';
 
-const Slideshow = () => {
+
+
+
+const Slideshow = ({data}:{data:any}) => {
+  console.log(data)
   // Array of Images
   const images = [
     "/promo1.jpg",
@@ -14,8 +18,6 @@ const Slideshow = () => {
     "/promo4.jpg",
     "/promo5.jpg",
   ];
-
-  console.log(images)
 
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
@@ -75,5 +77,7 @@ const Slideshow = () => {
     </div>
   );
 };
+
+
 
 export default Slideshow;

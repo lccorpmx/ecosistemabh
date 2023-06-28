@@ -31,16 +31,30 @@ export default function Home( {data}:{data:any}) {
         </div>
 
         <div className='bg-white mt-8 p-2 flex flex-col items-center justify-center'>
-            <div><h2 className='text-center text-black text-6xl'>PROMOS DEL <span className='text-yellow-400'><br />DIA</span></h2></div>
+            <div className='pb-4 pt-4'><h2 className='text-center text-black text-6xl'>PROMOS<span className='text-yellow-400'><br />BEE HIGH</span></h2></div>
             <div className='grid grid-cols-3 gap-2 m-2'>
-               <div><Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={data[1].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
-               <div><Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl'></Image></div>
+               <div className='flex flex-col items-center'>
+                  <Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
+                  <Link href="/allpromos">
+                     <BotonPersonalizado texto='PROMOS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                  </Link>
+               </div>
+
+               <div className='flex flex-col items-center'>
+                  <Image src={data[1].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
+                  <Link href="/allpromos">
+                     <BotonPersonalizado texto='COMBOS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                  </Link>
+               </div>
+
+               <div className='flex flex-col items-center'>
+                  <Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
+                  <Link href="/allpromos">
+                     <BotonPersonalizado texto='VER MAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                  </Link>
+               </div>
             </div>
-            <div className='pb-6'>
-               <Link href="/allpromos">
-                  <BotonPersonalizado texto='VER TODAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
-               </Link>
+            <div className='pb-6 grid grid-cols-3 gap-2 m-2'>
             </div>
 
             <div className='bg-black w-full pt-6'>
@@ -48,6 +62,7 @@ export default function Home( {data}:{data:any}) {
                <PCatalogo producto='Carts' imagen="/cn.png"></PCatalogo>
                <PCatalogo producto='Prerolls' imagen="/prerolls.png"></PCatalogo>
                <PCatalogo producto='Baterias' imagen="/bat.png"></PCatalogo>
+               <PCatalogo producto='Dulceria' imagen="/dulces.png"></PCatalogo>
             </div>
         </div>
      </>
