@@ -42,14 +42,14 @@ export default function Home( {data}:{data:any}) {
 
                <div className='flex flex-col items-center'>
                   <Image src={data[1].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
-                  <Link href="/allpromos">
+                  <Link href="/combos">
                      <BotonPersonalizado texto='COMBOS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
 
                <div className='flex flex-col items-center'>
                   <Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
-                  <Link href="/allpromos">
+                  <Link href="/sistemabonificaciones">
                      <BotonPersonalizado texto='VER MAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
@@ -57,7 +57,7 @@ export default function Home( {data}:{data:any}) {
             <div className='pb-6 grid grid-cols-3 gap-2 m-2'>
             </div>
 
-            <div className='bg-black w-full pt-6'>
+            <div className='bg-black w-full pt-6 rounded-2xl'>
                <p className='text-center text-yellow-400 text-6xl'>CATALOGO</p>
                <PCatalogo producto='Carts' imagen="/cn.png"></PCatalogo>
                <PCatalogo producto='Prerolls' imagen="/prerolls.png"></PCatalogo>

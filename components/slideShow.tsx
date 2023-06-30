@@ -5,19 +5,13 @@ import promo from '../public/prueba.jpg';
 import Image from 'next/image';
 import React from 'react';
 
+interface PromoData {
+  urlimage: string;
+  
+}
 
 
-
-const Slideshow = ({data}:{data:any}) => {
-  console.log(data)
-  // Array of Images
-  const images = [
-    "/promo1.jpg",
-    "/promo2.jpg",
-    "/promo3.jpg",
-    "/promo4.jpg",
-    "/promo5.jpg",
-  ];
+const SlideShow = ( { data }: { data: PromoData[] }) => {
 
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
@@ -42,10 +36,10 @@ const Slideshow = ({data}:{data:any}) => {
   return (
     <div className="w-full h-screen">
       <Zoom {...zoomInProperties}>
-        {images.map((each, index) => (
+        {data.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
-            <Image src={each} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
-            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">TODAS LAS <span className='text-yellow-400'>PROMOS</span></p>
+            <Image src={each.urlimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
+            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">PROMOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
         ))}
       </Zoom>
@@ -79,5 +73,4 @@ const Slideshow = ({data}:{data:any}) => {
 };
 
 
-
-export default Slideshow;
+export default SlideShow;

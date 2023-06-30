@@ -12,7 +12,7 @@ import "react-slideshow-image/dist/styles.css";
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 
-export default function allpromos({data}:{data:any}) {
+export default function Combos({data}:{data:any}) {
   return (
     <div>
         <Header></Header>
@@ -23,7 +23,7 @@ export default function allpromos({data}:{data:any}) {
 
 
 export async function getServerSideProps() {
-  let { data, error } = await supabase.from('allpromostable').select();
+  let { data, error } = await supabase.from('combostable').select();
   if (error) {
     console.error(error);
   }
