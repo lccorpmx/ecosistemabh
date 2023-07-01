@@ -9,40 +9,14 @@ export default function pPrerolls() {
         <div>
         <Header></Header>
         <div>
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>DIAMANTE</span></p>
+        <p className="text-center z-10 text-2xl bold text-white pt-4"><span className='text-yellow-400'>PREROLL</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Diamond Cart 1.1G' imagen="/ung.png" page='https://wa.me/5620388381' precio='$1500'></PCatalogo>
+        <PCatalogo producto='Preroll 3G' imagen="/productoPreroll.png" page='https://wa.me/5620388381' precio='$1500'></PCatalogo>
         </div>
 
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>98%</span></p>
+        <p className="text-center z-10 text-2xl bold text-white pt-4"><span className='text-yellow-400'>MEGATOKE</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Cart 98% 1.1G' imagen="/otrog.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
-        <PCatalogo producto='Cart 98% 0.5G' imagen="/mediog.png" page='https://wa.me/5620388381' precio='$750'></PCatalogo>
-        </div>
-
-
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>92%</span></p>
-        <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Cart 92% 1.0G' imagen="/ung.png" page='https://wa.me/5620388381' precio='$1000'></PCatalogo>
-        </div>
-
-
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>85%</span></p>
-        <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Cart 85% 1.1G' imagen="/mediog.png" page='https://wa.me/5620388381' precio='$850'></PCatalogo>
-        <PCatalogo producto='Cart 85% 0.5G' imagen="/mediog.png" page='https://wa.me/5620388381' precio='$650'></PCatalogo>
-        </div>
-
-
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>Full Spectrum</span></p>
-        <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='FullSpectrum 1.1G' imagen="/otrog.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
-        </div>
-
-
-        <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>CBD</span></p>
-        <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Cart CBD 1.1G' imagen="/ung.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
+        <PCatalogo producto='Megatoke 7G' imagen="/productoMegatoke.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
         </div>
         </div>
         </div>
