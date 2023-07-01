@@ -59,10 +59,13 @@ export default function Home( {data}:{data:any}) {
 
             <div className='bg-black w-full pt-6 rounded-2xl'>
                <p className='text-center text-yellow-400 text-6xl'>CATALOGO</p>
-               <PCatalogo producto='Carts' imagen="/cn.png"></PCatalogo>
-               <PCatalogo producto='Prerolls' imagen="/prerolls.png"></PCatalogo>
-               <PCatalogo producto='Baterias' imagen="/bat.png"></PCatalogo>
-               <PCatalogo producto='Dulceria' imagen="/dulces.png"></PCatalogo>
+               <div className='grid grid-cols-2 gap-8 m-8'>
+               <PCatalogo producto='Carts' imagen="/c1.png" page='/pCarts'></PCatalogo>
+               <PCatalogo producto='Prerolls' imagen="/c2.png" page='/pPrerolls'></PCatalogo>
+               <PCatalogo producto='Pods' imagen="/c4.png" page='/pPods'></PCatalogo>
+               <PCatalogo producto='Dulceria' imagen="/c3.png" page='/pDulceria'></PCatalogo>
+               </div>
+
             </div>
         </div>
      </>
