@@ -16,7 +16,7 @@ interface CatalogoProps {
 export default function productsCatalogo({ producto, imagen, page }: CatalogoProps) {
   return (
     <div className='flex justify-center items-center pt-6 pb-6'>
-      <div className='bg-white w-5/6
+      <div className='bg-white w-30
        rounded-3xl flex flex-col items-center p-6'>
         <p className='text-black text-3xl'>{producto}</p>
         <div>
