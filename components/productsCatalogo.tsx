@@ -30,7 +30,7 @@ export default function productsCatalogo({ producto, imagen, page }: CatalogoPro
         </div>
         <Link href={page}>
         <BotonPersonalizado
-          texto="Continuar"
+          texto="Ver"
           colorF="bg-black"
           colorT="text-white"
         />

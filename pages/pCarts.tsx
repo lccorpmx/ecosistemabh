@@ -36,7 +36,7 @@ export default function pCarts() {
 
         <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>Full Spectrum</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='FullSpectrum 1.1G' imagen="/otrog.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
+        <PCatalogo producto='Cart FullSpectrum 1.1G' imagen="/otrog.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
         </div>
 
 
