@@ -16,8 +16,8 @@ precio:string;
 
 export default function productCatalogo({ producto, imagen, page, precio }: CatalogoProps) {
   return (
-    <div className='flex justify-center items-center'>
-      <div className='bg-white w-3/4
+    <div className='flex justify-center items-center p-8'>
+      <div className='bg-white w-30
        rounded-3xl flex flex-col items-center p-6'>
         <div className=''>
         <p className='text-black text-2xl'>{producto}</p>

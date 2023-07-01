@@ -8,7 +8,7 @@ export default function pCarts() {
     <div className="pb-4">
         <div>
         <Header></Header>
-        <div>
+        <div className='p-2'>
         <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>DIAMANTE</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
         <PCatalogo producto='Diamond Cart 1.1G' imagen="/ung.png" page='https://wa.me/5620388381' precio='$1500'></PCatalogo>
