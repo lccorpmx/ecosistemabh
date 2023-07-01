@@ -4,8 +4,6 @@ import { Inter } from '@next/font/google';
 import Image from 'next/image'
 import BotonPersonalizado from '../components/BotonPersonalizado';
 
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
-
 const inter = Inter({ subsets: ['latin'] });
 
 interface CatalogoProps {
