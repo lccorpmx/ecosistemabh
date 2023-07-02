@@ -50,7 +50,7 @@ export default function Home( {data}:{data:any}) {
                <div className='flex flex-col items-center'>
                   <Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/sistemabonificaciones">
-                     <BotonPersonalizado texto='VER MAS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                     <BotonPersonalizado texto='VER MÁS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
             </div>
@@ -58,13 +58,13 @@ export default function Home( {data}:{data:any}) {
             </div>
 
             <div className='bg-black w-full pt-6 rounded-2xl'>
-               <p className='text-center text-yellow-400 text-5xl'>CATALOGO</p>
+               <p className='text-center text-yellow-400 text-5xl'>CATÁLOGO</p>
                <div className='grid grid-cols-2 gap-4 m-4'>
                <PCatalogo producto='Carts' imagen="/c1.png" page='/pCarts'></PCatalogo>
-               <PCatalogo producto='Prerolls' imagen="/c2.png" page='/pPrerolls'></PCatalogo>
                <PCatalogo producto='Pods' imagen="/c4.png" page='/pPods'></PCatalogo>
-               <PCatalogo producto='Dulceria' imagen="/c3.png" page='/pDulceria'></PCatalogo>
-               <PCatalogo producto='Baterias' imagen="/c3.png" page='/pBaterias'></PCatalogo>
+               <PCatalogo producto='Baterias' imagen="/bats.png" page='/pBaterias'></PCatalogo>
+               <PCatalogo producto='Prerolls' imagen="/c2.png" page='/pPrerolls'></PCatalogo>
+               <PCatalogo producto='Dulcería' imagen="/c3.png" page='/pDulceria'></PCatalogo>
                <PCatalogo producto='Flor' imagen="/flor.png" page='/pFlor'></PCatalogo>
                <PCatalogo producto='Goteros' imagen="/gotero.png" page='/pGoteros'></PCatalogo>
                <PCatalogo producto='Pomadas' imagen="/pomadaabuela.png" page='/pPomadas'></PCatalogo>

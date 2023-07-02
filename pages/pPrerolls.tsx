@@ -11,12 +11,12 @@ export default function pPrerolls() {
         <div>
         <p className="text-center z-10 text-2xl bold text-white pt-4"><span className='text-yellow-400'>PREROLL</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Preroll 3G' imagen="/productoPreroll.png" page='https://wa.me/5620388381' precio='$1500'></PCatalogo>
+        <PCatalogo producto='Preroll 2G' imagen="/productoPreroll.png" page='https://wa.me/5620388381' precio='$500'></PCatalogo>
         </div>
 
         <p className="text-center z-10 text-2xl bold text-white pt-4"><span className='text-yellow-400'>MEGATOKE</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
-        <PCatalogo producto='Megatoke 7G' imagen="/productoMegatoke.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
+        <PCatalogo producto='Megatoke 4G' imagen="/productoMegatoke.png" page='https://wa.me/5620388381' precio='$950'></PCatalogo>
         </div>
         </div>
         </div>

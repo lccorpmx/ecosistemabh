@@ -17,7 +17,7 @@ export default function pCarts() {
         <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>98%</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
         <PCatalogo producto='Cart 98% 1.1G' imagen="/otrog.png" page='https://wa.me/5620388381' precio='$1200'></PCatalogo>
-        <PCatalogo producto='Cart 98% 0.5G' imagen="/mediogramo.png" page='https://wa.me/5620388381' precio='$750'></PCatalogo>
+        <PCatalogo producto='Cart 98% 0.5G' imagen="/mediogramo.png" page='https://wa.me/5620388381' precio='$650'></PCatalogo>
         </div>
 
 
@@ -30,7 +30,7 @@ export default function pCarts() {
         <p className="text-center z-10 text-2xl bold text-white pt-4">LÍNEA   <span className='text-yellow-400'>85%</span></p>
         <div className='grid grid-cols-2 gap-8 m-8'>
         <PCatalogo producto='Cart 85% 1.1G' imagen="/ung.png" page='https://wa.me/5620388381' precio='$850'></PCatalogo>
-        <PCatalogo producto='Cart 85% 0.5G' imagen="/mediogramo.png" page='https://wa.me/5620388381' precio='$650'></PCatalogo>
+        <PCatalogo producto='Cart 85% 0.5G' imagen="/mediogramo.png" page='https://wa.me/5620388381' precio='$600'></PCatalogo>
         </div>
 
 
