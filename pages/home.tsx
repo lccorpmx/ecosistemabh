@@ -64,6 +64,10 @@ export default function Home( {data}:{data:any}) {
                <PCatalogo producto='Prerolls' imagen="/c2.png" page='/pPrerolls'></PCatalogo>
                <PCatalogo producto='Pods' imagen="/c4.png" page='/pPods'></PCatalogo>
                <PCatalogo producto='Dulceria' imagen="/c3.png" page='/pDulceria'></PCatalogo>
+               <PCatalogo producto='Baterias' imagen="/c3.png" page='/pBaterias'></PCatalogo>
+               <PCatalogo producto='Flor' imagen="/flor.png" page='/pFlor'></PCatalogo>
+               <PCatalogo producto='Goteros' imagen="/gotero.png" page='/pGoteros'></PCatalogo>
+               <PCatalogo producto='Pomadas' imagen="/pomadaabuela.png" page='/pPomadas'></PCatalogo>
                </div>
 
             </div>
