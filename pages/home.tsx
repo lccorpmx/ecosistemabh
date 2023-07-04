@@ -13,6 +13,9 @@ import PCatalogo from '../components/productsCatalogo'
 import { supabase } from './../lib/supabaseClient';
 
 
+
+
+
 export default function Home( {data}:{data:any}) {
     return (
      <>
