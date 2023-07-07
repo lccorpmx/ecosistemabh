@@ -5,11 +5,12 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
 import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
-import abejaAmarilla from '../public/AbejaAmarilla.png'
+import abejaAmarilla from '../public/abejainicio.png'
 import promo from '../public/promo1.jpg'
 import promoUno from '../public/promo2.jpg'
 import promoDos from '../public/promo3.jpg'
 import PCatalogo from '../components/productsCatalogo'
+import SlideShow from '@/components/slideShow';
 import { supabase } from './../lib/supabaseClient';
 
 
@@ -24,9 +25,10 @@ export default function Home( {data}:{data:any}) {
 
         <div className='flex flex-col items-center justify-center mt-8'>
             <Image src={abejaAmarilla} alt="Logo" width={180}/>
+            <h1 className='text-2xl'>ECOSISTEMA</h1>
             <h1 className='text-6xl'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
-            <p className='text-center text-2xl'>SI ES LA SEMANA<br/>DE TU<br/>CUMPLEAÑOS</p>
+            <p className='text-center text-xl p-2'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
             <Link href="/birthday" className='pt-4'>
             <BotonPersonalizado texto="Haz clic aquí" colorF="bg-yellow-400" colorT='text-black'></BotonPersonalizado>
              </Link>
@@ -74,6 +76,8 @@ export default function Home( {data}:{data:any}) {
                </div>
 
             </div>
+
+           
         </div>
      </>
     )
@@ -94,5 +98,3 @@ export default function Home( {data}:{data:any}) {
      },
    };
  }
- 
-  
