@@ -14,6 +14,11 @@ export default function Index( {data}:{data:any}) {
 
   return (
     <div>
+      <Head>
+        <title>BeeHigh</title>
+        <meta name="description" content="BeeHigh" />
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
       <Popup imagen={data[0].linkimage}></Popup>
     </div>
   )
