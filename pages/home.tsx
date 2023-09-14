@@ -20,6 +20,12 @@ import { supabase } from './../lib/supabaseClient';
 export default function Home( {data}:{data:any}) {
     return (
      <>
+     <Head>
+        <title>BeeHigh</title>
+        <meta name="description" content="BeeHigh" />
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+
         <Header></Header>
 
 
