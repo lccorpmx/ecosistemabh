@@ -29,18 +29,18 @@ export default function Home( {data}:{data:any}) {
         <Header></Header>
 
 
-        <div className='flex flex-col items-center justify-center mt-8 bg-black'>
+        <div className='flex flex-col items-center justify-center pt-6 pb-6 bg-black'>
             <Image src={abejaAmarilla} alt="Logo" width={180}/>
-            <h1 className='text-6xl'>BEE <span className='text-yellow-400'>HIGH</span></h1>
+            <h1 className='text-6xl text-white'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
-            <p className='text-center text-xl p-2'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
+            <p className='text-center text-xl p-2 text-white'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
             <Link href="/birthday" className='pt-4'>
             <BotonPersonalizado texto="Haz clic aquí" colorF="bg-yellow-400" colorT='text-black'></BotonPersonalizado>
              </Link>
             
         </div>
 
-        <div className='bg-white mt-8 p-2 flex flex-col items-center justify-center'>
+        <div className='bg-white p-2 flex flex-col items-center justify-center'>
             <div className='pb-4 pt-4'><h2 className='text-center text-black text-6xl'>PROMOS<span className='text-yellow-400'><br />BEE HIGH</span></h2></div>
             <div className='grid grid-cols-4 gap-2 m-2'>
                <div className='flex flex-col items-center pb-6'>
