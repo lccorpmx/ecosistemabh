@@ -16,7 +16,7 @@ const BotonPersonalizado: React.FC<BotonPersonalizadoProps> = ({
   const claseColorTexto = `${colorT}`;
 
   return (
-    <button className={`${claseColorTexto}  whitespace-nowrap rounded-full py-2 px-4 font-bold text-s ${claseColorFondo}`}>
+    <button className={`${claseColorTexto}  whitespace-nowrap rounded-full py-2 px-2 font-bold text-sm ${claseColorFondo}`}>
       {texto}
     </button>
   );
