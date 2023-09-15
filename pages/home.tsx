@@ -42,7 +42,7 @@ export default function Home( {data}:{data:any}) {
 
         <div className='bg-white p-2 flex flex-col items-center justify-center'>
             <div className='pb-4 pt-4'><h2 className='text-center text-black text-6xl'>PROMOS<span className='text-yellow-400'><br />BEE HIGH</span></h2></div>
-            <div className='grid grid-cols-4 gap-2 m-2'>
+            <div className='grid grid-cols-2 gap-2 m-2'>
                <div className='flex flex-col items-center pb-6'>
                   <Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/allpromos">
