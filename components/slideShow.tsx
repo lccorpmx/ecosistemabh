@@ -71,7 +71,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
         }
       `}</style>
       <div className="flex justify-center">
-      <Link href="/home" className="pt-4">
+      <Link href="/home" className="pt-8">
         <BotonPersonalizado
           texto="Comprar"
           colorF="bg-white"
