@@ -37,7 +37,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
   return (
     <div className="w-full h-screen bg-black">
 
-  <Link href="/home">
+  <Link href="https://wa.me/5620388381">
        <div className="flex justify-center items-center pt-4">
         <div>
         <Image
@@ -49,7 +49,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
         />
         </div>
         <div>
-        <p className="pl-2 text-base">Compra  <span className='text-yellow-400'>Aquí</span></p>
+        <p className="pl-2 text-base text-white">Compra  <span className='text-yellow-400'>Aquí</span></p>
         </div>
       </div>
       </Link>

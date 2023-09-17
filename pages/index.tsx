@@ -11,21 +11,6 @@ import SlideShow from '../components/slideShow'
 const inter = Inter({ subsets: ['latin'] })
 
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import Header from '@/components/header';
-
-
-
-
-
-
 export default function Index( {data}:{data:any}) {
 
 
@@ -44,7 +29,7 @@ export default function Index( {data}:{data:any}) {
 }
 
 export async function getServerSideProps() {
-  let { data, error } = await supabase.from('allpromostable').select();
+  let { data, error } = await supabase.from('popuptable').select();
   if (error) {
     console.error(error);
   }

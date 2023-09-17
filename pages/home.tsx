@@ -47,9 +47,9 @@ export default function Home( {data}:{data:any}) {
             <p className='text-center text-xl p-2 text-white'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
              <Dialog>
   <DialogTrigger className='bg-yellow-400 rounded-2xl p-2 text-black'>Click Aqui</DialogTrigger>
-  <DialogContent>
+  <DialogContent className='bg-yellow-400 text-black'>
    <div className='flex justify-center p-2'>
-   <Image src={cumple} alt="Logo" width={1200}/>
+   <Image src={cumple} alt="Logo" width={1200} className='rounded-xl'/>
    </div>
   </DialogContent>
 </Dialog>

@@ -7,16 +7,12 @@ import React from 'react';
 import Link from 'next/link';
 import BotonPersonalizado from '../components/BotonPersonalizado';
 
-interface PromoData {
-  urlimage: string;
-  txtButton: string;
-  titulo1: string;
-  titulo2: string;
-  
+interface AvisosData {
+  linkimage: string;
 }
 
 
-const SlideShow = ( { data }: { data: PromoData[] }) => {
+const popup = ( { data }: { data: AvisosData[] }) => {
 
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
@@ -43,7 +39,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
       <Zoom {...zoomInProperties}>
         {data.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative bg-black p-6 rounded-xl">
-            <Image src={each.urlimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
+            <Image src={each.linkimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
             <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">AVISOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
           
@@ -88,4 +84,4 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
 };
 
 
-export default SlideShow;
+export default popup;
