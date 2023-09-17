@@ -70,8 +70,8 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
           z-index: 1; /* Coloca la flecha por encima del fondo desenfocado */
         }
       `}</style>
-      <div className="flex justify-center">
-      <Link href="/home" className="pt-8">
+      <div className="flex justify-center pt-4 pb-10">
+      <Link href="/home">
         <BotonPersonalizado
           texto="Comprar"
           colorF="bg-white"
