@@ -30,14 +30,13 @@ export default function Index( {data}:{data:any}) {
 
 
   return (
-    <div className='bg-black'>
+    <div className='bg-yellow-400 p-4'>
       <Head>
         <title>BeeHigh</title>
         <meta name="description" content="BeeHigh" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <Header></Header>
-      <div className='m-6'>
+      <div className=''>
       <Popup data={data}></Popup>
       </div>
     </div>

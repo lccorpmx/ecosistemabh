@@ -36,11 +36,28 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
 
   return (
     <div className="w-full h-screen">
+
+  <Link href="/home">
+       <div className="flex justify-center items-center pt-6">
+        <div>
+        <Image
+          className='rounded-xl'
+          src={'/wa.png'}
+          alt='Mi imagen'
+          width={35}
+          height={35}
+        />
+        </div>
+        <div>
+        <p className="pl-2 text-base">Compra  <span className='text-yellow-400'>Aquí</span></p>
+        </div>
+      </div>
+      </Link>
       <Zoom {...zoomInProperties}>
         {data.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
             <Image src={each.urlimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
-            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">PROMOS   <span className='text-yellow-400'>BEE HIGH</span></p>
+            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white text-xl">PROMOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
           
         ))}
@@ -70,15 +87,6 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
           z-index: 1; /* Coloca la flecha por encima del fondo desenfocado */
         }
       `}</style>
-      <div className="flex justify-center pt-4 pb-10">
-      <Link href="/home">
-        <BotonPersonalizado
-          texto="Comprar"
-          colorF="bg-white"
-          colorT="text-black"
-        />
-      </Link>
-      </div>
     </div>
   );
 };
