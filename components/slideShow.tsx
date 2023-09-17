@@ -4,10 +4,11 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 import promo from '../public/prueba.jpg';
 import Image from 'next/image';
 import React from 'react';
+import Link from 'next/link';
+import BotonPersonalizado from '../components/BotonPersonalizado';
 
 interface PromoData {
   urlimage: string;
-  
 }
 
 
@@ -41,6 +42,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
             <Image src={each.urlimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
             <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">PROMOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
+          
         ))}
       </Zoom>
       <style jsx global>{`
@@ -68,6 +70,15 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
           z-index: 1; /* Coloca la flecha por encima del fondo desenfocado */
         }
       `}</style>
+      <div className="flex justify-center">
+      <Link href="/home" className="pt-4">
+        <BotonPersonalizado
+          texto="Comprar"
+          colorF="bg-white"
+          colorT="text-black"
+        />
+      </Link>
+      </div>
     </div>
   );
 };
