@@ -6,28 +6,30 @@ import Link from 'next/link';
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import Popup from "../components/popup"
 import { supabase } from './../lib/supabaseClient';
+import SlideShow from '../components/slideShow'
 
 const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Index( {data}:{data:any}) {
 
 
   return (
-    <div>
+    <div className='bg-yellow-400 p-4'>
       <Head>
         <title>BeeHigh</title>
         <meta name="description" content="BeeHigh" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <Popup imagen={data[0].linkimage}></Popup>
+      <div className=''>
+      <Popup data={data}></Popup>
+      </div>
     </div>
   )
 }
+
 export async function getServerSideProps() {
   let { data, error } = await supabase.from('popuptable').select();
-
-  console.log(data); // Verificar los datos devueltos en la consola
-
   if (error) {
     console.error(error);
   }
