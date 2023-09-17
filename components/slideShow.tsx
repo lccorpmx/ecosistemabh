@@ -35,10 +35,10 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
   };
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen bg-black">
 
   <Link href="/home">
-       <div className="flex justify-center items-center pt-6">
+       <div className="flex justify-center items-center pt-4">
         <div>
         <Image
           className='rounded-xl'
