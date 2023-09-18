@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/abejainicio.png'
-import cumple from '../public/3.jpg'
+import cumple from '../public/cumple.jpeg'
 import promo from '../public/promo1.jpg'
 import promoUno from '../public/promo2.jpg'
 import promoDos from '../public/promo3.jpg'
