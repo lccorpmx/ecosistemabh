@@ -17,7 +17,7 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
     scale: 1,
-    duration: 5000,
+    duration: 5000000000000,
     transitionDuration: 300,
     infinite: true,
     prevArrow: (
