@@ -23,6 +23,14 @@ import {
    DialogTitle,
    DialogTrigger,
  } from "@/components/ui/dialog"
+
+ import {
+   Accordion,
+   AccordionContent,
+   AccordionItem,
+   AccordionTrigger,
+ } from "@/components/ui/accordion"
+ 
  
 
 
@@ -81,12 +89,47 @@ export default function Home( {data}:{data:any}) {
                   </Link>
                </div>
             </div>
-            <div className='pb-6 grid grid-cols-3 gap-2 m-2'>
-            </div>
+        
 
             
 
            
+        </div>
+
+        <div className='p-6'>
+        <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>ROLAS by<span className='text-yellow-400 underline'><br /> <Link rel="stylesheet" href="https://www.instagram.com/mrbeemex/">MR.BEE</Link></span></h2></div>
+         <div>
+            <Accordion type="single" collapsible>
+               <AccordionItem value="item-1">
+                  <AccordionTrigger className='text-yellow-400'>RKT Más Envidia Que Fe</AccordionTrigger>
+                  <AccordionContent>
+                  <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/3qxivFEbnuAhpvzSDc7M9r?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </AccordionContent>
+               </AccordionItem>
+            </Accordion>
+         </div>
+
+         <div>
+            <Accordion type="single" collapsible>
+               <AccordionItem value="item-1">
+                  <AccordionTrigger className='text-yellow-400'>Perro Cochino</AccordionTrigger>
+                  <AccordionContent>
+                  <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/65kqSKKOm5UrYhdpNQvu7Y?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </AccordionContent>
+               </AccordionItem>
+            </Accordion>
+         </div>
+
+         <div>
+            <Accordion type="single" collapsible>
+               <AccordionItem value="item-1">
+                  <AccordionTrigger className='text-yellow-400'>Ya Date Un Fuuu</AccordionTrigger>
+                  <AccordionContent>
+                  <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/4M1epwPH6INIiEGosyeACt?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </AccordionContent>
+               </AccordionItem>
+            </Accordion>
+         </div>
         </div>
      </>
     )
