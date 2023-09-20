@@ -103,7 +103,7 @@ export default function Home( {data}:{data:any}) {
                <AccordionItem value="item-1">
                   <AccordionTrigger className='text-yellow-400'>RKT Más Envidia Que Fe</AccordionTrigger>
                   <AccordionContent>
-                  <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/3qxivFEbnuAhpvzSDc7M9r?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/3qxivFEbnuAhpvzSDc7M9r?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </AccordionContent>
                </AccordionItem>
             </Accordion>
