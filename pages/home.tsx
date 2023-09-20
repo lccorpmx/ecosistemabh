@@ -96,7 +96,7 @@ export default function Home( {data}:{data:any}) {
            
         </div>
 
-        <div className='p-6'>
+        <div className='p-6 bg-black'>
         <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>ROLAS by<span className='text-yellow-400 underline'><br /> <Link rel="stylesheet" href="https://www.instagram.com/mrbeemex/">MR.BEE</Link></span></h2></div>
          <div>
             <Accordion type="single" collapsible>
