@@ -4,6 +4,16 @@ import "tailwindcss/tailwind.css";
 import logo from "../public/LogoBHNegro.png"
 import Link from "next/link";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+
 function Header() {
   return (
     <header className="flex justify-center items-center bg-white">
