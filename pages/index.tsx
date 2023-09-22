@@ -15,7 +15,7 @@ export default function Index( {data}:{data:any}) {
 
 
   return (
-    <div className='p-4'>
+    <div className='p-4 bg-black'>
       <Head>
         <title>BeeHigh</title>
         <meta name="description" content="BeeHigh" />
