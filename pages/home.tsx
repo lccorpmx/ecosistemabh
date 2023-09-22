@@ -15,6 +15,7 @@ import SlideShow from '@/components/slideShow';
 import { supabase } from './../lib/supabaseClient';
 
 
+
 import {
    Dialog,
    DialogContent,
@@ -138,7 +139,7 @@ export default function Home( {data}:{data:any}) {
   export async function getServerSideProps() {
    let { data, error } = await supabase.from('relevationpromosdb').select();
  
-   console.log(data); // Verificar los datos devueltos en la consola
+   //console.log(data); // Verificar los datos devueltos en la consola
  
    if (error) {
      console.error(error);

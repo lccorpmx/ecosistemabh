@@ -3,6 +3,8 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 import logo from "../public/LogoBHNegro.png"
 import Link from "next/link";
+import DownloadButton from '@/components/DownloadButton';
+
 
 import {
   Sheet,
@@ -16,10 +18,16 @@ import {
 
 function Header() {
   return (
-    <header className="flex justify-center items-center bg-white">
+    <header className="flex items-center justify-between bg-white pr-6 pl-6">
+      <div>
       <Link href="/home">
           <Image src={logo} alt="Logo" width={60}/>
       </Link>
+      </div>
+
+      <div className="text-black">
+      <DownloadButton></DownloadButton>
+      </div>
     </header>
   );
 }
