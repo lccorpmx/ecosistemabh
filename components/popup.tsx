@@ -38,8 +38,8 @@ const popup = ( { data }: { data: AvisosData[] }) => {
     <div className="w-full h-screen">
       <Zoom {...zoomInProperties}>
         {data.map((each, index) => (
-          <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative bg-black p-6 rounded-xl">
-            <Image src={each.linkimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
+          <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative bg-black p-6">
+            <Image src={each.linkimage} className="w-full pt-16" height={1080} width={1080} alt="Logo" />
             <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">AVISOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
           
@@ -74,8 +74,8 @@ const popup = ( { data }: { data: AvisosData[] }) => {
       <Link href="/home" className="pt-4">
         <BotonPersonalizado
           texto="Continuar"
-          colorF="bg-black"
-          colorT="text-white"
+          colorF="bg-yellow-400"
+          colorT="text-black"
         />
       </Link>
       </div>
