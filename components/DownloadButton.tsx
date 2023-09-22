@@ -30,7 +30,7 @@ export default function DownloadButton() {
         <div>
         <FaFileDownload
         onClick={downloadPDFs}
-        className="text-2xl animate-pulse transition duration-5000">
+        className="text-2xl text-white animate-pulse transition duration-5000">
         </FaFileDownload>
         </div>
 
