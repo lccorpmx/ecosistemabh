@@ -5,7 +5,7 @@ export default function DownloadButton() {
     const downloadPDFs = async () => {
         try {
           // Reemplaza estas URLs con las URL directas a tus archivos PDF en GitHub.
-          const pdf1URL = 'https://raw.githubusercontent.com/lccorpmx/MBH/main/MenuBeeHigh.pdf';
+          const pdf1URL = 'https://raw.githubusercontent.com/lccorpmx/MBH/main/MenuBeeHigh.pdf'  + `?t=${Date.now()}`;
           
           // Descarga el primer PDF
           const response1 = await fetch(pdf1URL);
