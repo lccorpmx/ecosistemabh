@@ -21,7 +21,7 @@ export default function Index( {data}:{data:any}) {
         <meta name="description" content="BeeHigh" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <div className='bg-black'>
+      <div className='bg-black relative max-w-md mx-auto'>
       <Popup data={data}></Popup>
       </div>
     </div>

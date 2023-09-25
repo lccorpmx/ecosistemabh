@@ -21,13 +21,13 @@ const popup = ( { data }: { data: AvisosData[] }) => {
     transitionDuration: 300,
     infinite: true,
     prevArrow: (
-      <div className="ml-10 top-5 md:top-72 arrow-container">
+      <div className="ml-10 top-5  arrow-container">
         <div className="arrow"></div>
         <ArrowLeftIcon className="h-8 w-8 text-white cursor-pointer arrow-icon" />
       </div>
     ),
     nextArrow: (
-      <div className="mr-10 top-5 md:top-72 arrow-container">
+      <div className="mr-10 top-5  arrow-container">
         <div className="arrow"></div>
         <ArrowRightIcon className="h-8 w-8 text-white cursor-pointer arrow-icon" />
       </div>
@@ -40,7 +40,7 @@ const popup = ( { data }: { data: AvisosData[] }) => {
         {data.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative bg-black p-6">
             <Image src={each.linkimage} className="w-full pt-16" height={1080} width={1080} alt="Logo" />
-            <p className="absolute md:top-80 top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">AVISOS   <span className='text-yellow-400'>BEE HIGH</span></p>
+            <p className="absolute  top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">AVISOS   <span className='text-yellow-400'>BEE HIGH</span></p>
           </div>
           
         ))}
