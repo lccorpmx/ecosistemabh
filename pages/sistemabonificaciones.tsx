@@ -15,9 +15,11 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 export default function SistemaBonificaciones({data}:{data:any}) {
   return (
     <div>
-        <Header></Header>
-    <SlideShow data={data}></SlideShow>
+    <Header></Header>
+    <div className='relative max-w-md mx-auto'>
+      <SlideShow data={data}></SlideShow>
     </div>
+</div>
   )
 }
 
