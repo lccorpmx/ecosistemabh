@@ -133,7 +133,7 @@ export default function Home( {data}:{data:any}) {
          </div>
         </div>
 
-        <div>
+        <div className='bg-black'>
         <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>BEE<span className='text-yellow-400'>TUBE</span></h2></div>
             <div>
             <div className='pb-4 pt-4'><h2 className='text-center text-white text-2xl'>Video Oficial Ya Date un Fuuu</h2></div>
