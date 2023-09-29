@@ -132,6 +132,54 @@ export default function Home( {data}:{data:any}) {
             </Accordion>
          </div>
         </div>
+
+        <div>
+        <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>BEE<span className='text-yellow-400'>TUBE</span></h2></div>
+            <div>
+            <div className='pb-4 pt-4'><h2 className='text-center text-white text-2xl'>Video Oficial Ya Date un Fuuu</h2></div>
+                  <div className="flex justify-center">
+      <div className="w-3/4">
+         <iframe
+            className="w-full h-64 md:h-96 lg:h-128"
+            src="https://www.youtube.com/embed/LCJYxUc95Ik?si=ntUHrdDtlp8_LWXt"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         ></iframe>
+      </div>
+</div>
+            </div>
+
+
+            <div>
+            <div className='pb-4 pt-4'><h2 className='text-center text-white text-2xl'>ESPECIAL 420 RICARDO PEREZ x Bee High Mx</h2></div>
+                  <div className="flex justify-center">
+      <div className="w-3/4">
+         <iframe
+            className="w-full h-64 md:h-96 lg:h-128"
+            src="https://www.youtube.com/embed/hJxE3SCsc78?si=HAV1VRjsblLqwSxJ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         ></iframe>
+      </div>
+</div>
+            </div>
+
+            <div>
+            <div className='pb-4 pt-4'><h2 className='text-center text-white text-2xl'>Mr.Bee x Zona 420 MX</h2></div>
+                  <div className="flex justify-center">
+      <div className="w-3/4">
+         <iframe
+            className="w-full h-64 md:h-96 lg:h-128"
+            src="https://www.youtube.com/embed/B37AzUCWkvk?si=YCEzgXaE74xS2HSl"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         ></iframe>
+      </div>
+</div>
+            </div>
+
+        </div>
+
      </>
     )
   }
