@@ -72,21 +72,21 @@ export default function Home( {data}:{data:any}) {
                <div className='flex flex-col items-center'>
                   <Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/allpromos">
-                     <BotonPersonalizado texto='PROMOS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                     <BotonPersonalizado texto='Promos' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
 
                <div className='flex flex-col items-center'>
                   <Image src={data[1].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/combos">
-                     <BotonPersonalizado texto='COMBOS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                     <BotonPersonalizado texto='Kits' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
 
                <div className='flex flex-col items-center'>
                   <Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/sistemabonificaciones">
-                     <BotonPersonalizado texto='VER MÁS' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                     <BotonPersonalizado texto='Bonificaciones' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
             </div>
@@ -132,6 +132,8 @@ export default function Home( {data}:{data:any}) {
             </Accordion>
          </div>
         </div>
+
+        
      </>
     )
   }
