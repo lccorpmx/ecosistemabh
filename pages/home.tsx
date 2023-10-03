@@ -13,7 +13,7 @@ import promoDos from '../public/promo3.jpg'
 import PCatalogo from '../components/productsCatalogo'
 import SlideShow from '@/components/slideShow';
 import { supabase } from './../lib/supabaseClient';
-
+import { AiFillYoutube } from 'react-icons/ai';
 
 
 import {
@@ -68,7 +68,7 @@ export default function Home( {data}:{data:any}) {
 
         <div className='bg-white p-2 flex flex-col items-center justify-center'>
             <div className='pb-4 pt-4'><h2 className='text-center text-black text-6xl'>PROMOS<span className='text-yellow-400'><br />BEE HIGH</span></h2></div>
-            <div className='grid grid-cols-3 gap-2 m-2'>
+            <div className='grid grid-cols-4 gap-2 m-2'>
                <div className='flex flex-col items-center'>
                   <Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/allpromos">
@@ -87,6 +87,13 @@ export default function Home( {data}:{data:any}) {
                   <Image src={data[2].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
                   <Link href="/sistemabonificaciones">
                      <BotonPersonalizado texto='Bonificaciones' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
+                  </Link>
+               </div>
+
+               <div className='flex flex-col items-center'>
+                  <Image src={data[0].relevantpromo} width={1920} height={1080} alt='promo' className='rounded-xl pb-2'></Image>
+                  <Link href="/allpromos">
+                     <BotonPersonalizado texto='CBD' colorF='bg-yellow-400' colorT='text-black'></BotonPersonalizado>
                   </Link>
                </div>
             </div>
@@ -132,6 +139,44 @@ export default function Home( {data}:{data:any}) {
             </Accordion>
          </div>
         </div>
+
+        <div className='bg-black pb-6'>
+        <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>BEE<span className='text-yellow-400'>TUBE</span></h2></div>
+            
+            <div className='bg-red-600 p-2 m-2 rounded-xl m-6'>
+               <div className='flex justify-between items-center'>
+                  <div>
+                     <AiFillYoutube className='text-6xl'></AiFillYoutube>
+                  </div>
+                  <div>
+                     <Link href="https://www.youtube.com/watch?v=LCJYxUc95Ik" className='text-lg'>Mr.Pimp x Mr.Bee -  Ya date un fuuu</Link>
+                  </div>
+               </div>
+            </div>
+
+            <div className='bg-white p-2 m-2 rounded-xl m-6'>
+               <div className='flex justify-between items-center gap-2'>
+                  <div>
+                     <AiFillYoutube className='text-6xl text-red-600'></AiFillYoutube>
+                  </div>
+                  <div>
+                     <Link href="https://www.youtube.com/watch?v=hJxE3SCsc78" className='text-lg text-black'>EPISODIO ESPECIAL 420 RICARDO PEREZ x Bee High Mx</Link>
+                  </div>
+               </div>
+            </div>
+
+            <div className='bg-red-600 p-2 m-2 rounded-xl m-6'>
+               <div className='flex justify-between items-center gap-2'>
+                  <div>
+                     <AiFillYoutube className='text-6xl'></AiFillYoutube>
+                  </div>
+                  <div>
+                     <Link href="https://www.youtube.com/watch?v=B37AzUCWkvk" className='text-lg'>Podcast Zona420MX x Mr.Bee</Link>
+                  </div>
+               </div>
+            </div>
+        </div>
+
 
         
      </>
