@@ -5,6 +5,7 @@ import logo from "../public/LogoBHNegro.png"
 import Link from "next/link";
 import DownloadButton from '@/components/DownloadButton';
 import DownloadButtonCDMX from '@/components/DownloadButtonCDMX';
+import DownloadButtonBeeHeatlhy from "./DownloadButtonBeeHealthy";
 import { LuMenuSquare } from 'react-icons/lu';
 
 
@@ -47,6 +48,7 @@ function Header() {
       <SheetDescription>
        <DownloadButton></DownloadButton>
        <DownloadButtonCDMX></DownloadButtonCDMX>
+       <DownloadButtonBeeHeatlhy></DownloadButtonBeeHeatlhy>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
