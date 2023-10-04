@@ -9,7 +9,7 @@ export default function DownloadButtonBeeHeatlhy() {
 
     try {
       // Reemplaza estas URLs con las URL directas a tus archivos PDF en GitHub.
-      const pdf2URL = 'https://raw.githubusercontent.com/lccorpmx/MBH/main/MenuBeeHighCDMX.pdf' + `?t=${Date.now()}`;
+      const pdf2URL = 'https://raw.githubusercontent.com/lccorpmx/MBH/main/MenuBeeHealthy.pdf' + `?t=${Date.now()}`;
 
       // Descarga el segundo PDF
       const response2 = await fetch(pdf2URL);
