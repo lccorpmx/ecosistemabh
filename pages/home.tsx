@@ -13,7 +13,8 @@ import promoDos from '../public/promo3.jpg'
 import PCatalogo from '../components/productsCatalogo'
 import SlideShow from '@/components/slideShow';
 import { supabase } from './../lib/supabaseClient';
-import { AiFillYoutube } from 'react-icons/ai';
+import { AiFillYoutube, AiOutlineWhatsApp, AiOutlineInstagram } from 'react-icons/ai';
+import { TbBrandTelegram } from 'react-icons/tb';
 
 
 import {
@@ -133,9 +134,69 @@ export default function Home( {data}:{data:any}) {
          </div>
         </div>
 
+        <div className='bg-white pb-6'>
+        <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl text-yellow-400'>CONTACTO</h2></div>
+        <div className='grid grid-cols-2 items-center gap-4'>
+
+        <Link href="https://wa.me/message/FOZGCK245UB7O1">
+         <div className='flex flex-col items-center'>
+            
+            <AiOutlineWhatsApp className='text-green-600 text-4xl'></AiOutlineWhatsApp>
+            <div className="w-2/6  border border-black rounded-full mt-2 mb-2"></div>
+            <p className='text-yellow-400 text-lg'>WhatsApp Foraneos</p>
+   
+         </div>
+         </Link>
+
+         <Link href="https://wa.me/5532399649">
+         <div className='flex flex-col items-center'>
+            
+            <AiOutlineWhatsApp className='text-green-600 text-4xl'></AiOutlineWhatsApp>
+            <div className="w-2/6  border border-black rounded-full mt-2 mb-2"></div>
+            <p className='text-yellow-400 text-lg'>WhatsApp CDMX</p>
+   
+         </div>
+         </Link>
+
+         <Link href="https://t.me/+1aDac5AqdShiYTlh">
+         <div className='flex flex-col items-center'>
+            
+            <TbBrandTelegram className='text-blue-500 text-4xl'></TbBrandTelegram>
+            <div className="w-2/6  border border-black rounded-full mt-2 mb-2"></div>
+            <p className='text-yellow-400 text-lg'>Telegram</p>
+   
+         </div>
+         </Link>
+
+         <Link href="https://www.instagram.com/bee_highmex/">
+         <div className='flex flex-col items-center'>
+            
+            <AiOutlineInstagram className='text-pink-600 text-4xl'></AiOutlineInstagram>
+            <div className="w-2/6  border border-black rounded-full mt-2 mb-2"></div>
+            <p className='text-yellow-400 text-lg'>BeeHigh</p>
+   
+         </div>
+         </Link>
+
+        </div>
+        </div>
+
+
+
         <div className='bg-black pb-6'>
         <div className='pb-4 pt-4'><h2 className='text-center text-white text-6xl'>BEE<span className='text-yellow-400'>TUBE</span></h2></div>
             
+        <div className='bg-white p-2 m-2 rounded-xl m-6'>
+               <div className='flex justify-between items-center gap-2'>
+                  <div>
+                     <AiFillYoutube className='text-6xl text-red-600'></AiFillYoutube>
+                  </div>
+                  <div>
+                     <Link href="https://www.youtube.com/watch?v=nB_PTt9_EfE" className='text-lg text-black'>Perro Cochino Mr.Bee x Mr.Pimp Dog</Link>
+                  </div>
+               </div>
+            </div>
+
             <div className='bg-red-600 p-2 m-2 rounded-xl m-6'>
                <div className='flex justify-between items-center'>
                   <div>
