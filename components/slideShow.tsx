@@ -6,13 +6,19 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import BotonPersonalizado from '../components/BotonPersonalizado';
+import HeaderPromos from "./headerPromos";
 
 interface PromoData {
   urlimage: string;
 }
 
+interface SlideShowProps {
+  data: PromoData[];
+  title: string;
+  title2: string;
+}
 
-const SlideShow = ( { data }: { data: PromoData[] }) => {
+const SlideShow = ({ data, title, title2 }: SlideShowProps) => {
 
   // Custom properties for zoom effect while slide-show
   const zoomInProperties = {
@@ -21,13 +27,13 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
     transitionDuration: 300,
     infinite: true,
     prevArrow: (
-      <div className="ml-10 top-5 arrow-container">
+      <div className="ml-10 top-3 arrow-container">
         <div className="arrow"></div>
         <ArrowLeftIcon className="h-8 w-8 text-white cursor-pointer arrow-icon" />
       </div>
     ),
     nextArrow: (
-      <div className="mr-10 top-5 arrow-container">
+      <div className="mr-10 top-3 arrow-container">
         <div className="arrow"></div>
         <ArrowRightIcon className="h-8 w-8 text-white cursor-pointer arrow-icon" />
       </div>
@@ -36,28 +42,29 @@ const SlideShow = ( { data }: { data: PromoData[] }) => {
 
   return (
     <div className="w-full h-screen bg-black">
-
-  <Link href="https://wa.me/5620388381">
-       <div className="flex justify-center items-center pt-4">
-        <div>
-        <Image
-          className='rounded-xl'
-          src={'/wa.png'}
-          alt='Mi imagen'
-          width={35}
-          height={35}
-        />
-        </div>
-        <div>
-        <p className="pl-2 text-base text-white">Compra  <span className='text-yellow-400'>Aquí</span></p>
-        </div>
-      </div>
-      </Link>
       <Zoom {...zoomInProperties}>
         {data.map((each, index) => (
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative">
-            <Image src={each.urlimage} className="w-screen pt-16" height={1080} width={1080} alt="Logo" />
-            <p className="absolute top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white text-xl">PROMOS   <span className='text-yellow-400'>BEE HIGH</span></p>
+            <Image src={each.urlimage} className="w-screen pt-14" height={1080} width={1080} alt="Logo" />
+            <p className="absolute  top-4 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">{title}   <span className='text-yellow-400'>{title2}</span></p>
+            <div className="absolute top-[680px]  bg-green-800 rounded-2xl">
+            <Link href="https://wa.me/5620388381">
+              <div className="flex justify-center items-center p-2 gap-2">
+                <div>
+                <Image
+                  className='rounded-xl'
+                  src={'/wa.png'}
+                  alt='Mi imagen'
+                  width={30}
+                  height={30}
+                />
+                </div>
+                <div>
+                <p className="text-xs text-white">Compra  <span className='text-yellow-400'>Aquí</span></p>
+                </div>
+              </div>
+            </Link>
+            </div>
           </div>
           
         ))}
