@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
-import Header from '../components/header'
+import Header from '../components/headerPromos'
 import React, {useState} from 'react';
 import SlideShow from '../components/slideShow'
 import { supabase } from './../lib/supabaseClient';
@@ -15,9 +15,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 export default function allpromos({data}:{data:any}) {
   return (
     <div>
-    <Header></Header>
+      <Header></Header>
     <div className='relative max-w-md mx-auto'>
-      <SlideShow data={data}></SlideShow>
+      <SlideShow data={data}  title='Promos' title2='BeeHigh'></SlideShow>
     </div>
 </div>
   )
