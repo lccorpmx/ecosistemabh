@@ -23,13 +23,16 @@ import {
 function HeaderPromos() {
   return (
     <header className="flex items-center justify-between bg-white p-2">
-      <div className="flex items-center">
-      <Link href="/home">
-          <IoChevronBackOutline className="text-black w-8 h-8"></IoChevronBackOutline>
-      <p className="text-black">Inicio</p>
-      </Link>
+         <Link href="/home">
+      <div className="flex flex-row items-center">
+        <div className="">
+        <IoChevronBackOutline className="text-black w-8 h-8"></IoChevronBackOutline>
+        </div>
+        <div>
+        <p className="text-black">Inicio</p>
+        </div>
       </div>
-
+      </Link>
 
       <div className="text-black">
       <Sheet>
