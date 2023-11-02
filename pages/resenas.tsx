@@ -106,7 +106,7 @@ export default function Resenas({data}:{data:any}) {
         <Image src={abejaAmarilla} alt="Logo" width={60}/>
       </div>
       <div className='flex justify-center text-center'>
-        <p className='text-2xl'>Cuentanos tu <br /><span className='text-yellow-400 text-4  xl'>Experiencia</span></p>
+        <p className='text-2xl text-white'>Cuentanos tu <br /><span className='text-yellow-400 text-4  xl'>Experiencia</span></p>
       </div>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 p-14">
         <FormField
@@ -115,8 +115,8 @@ export default function Resenas({data}:{data:any}) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className='text-lg text-yellow-500'>Nombre o IG</FormLabel>
-              <FormControl>
-                <Input placeholder="Tu Nombre..." {...field} />
+              <FormControl className='border-white'>
+                <Input className='text-white' placeholder="Tu Nombre..." {...field} />
               </FormControl>
               <FormDescription>
               </FormDescription>
@@ -131,14 +131,14 @@ export default function Resenas({data}:{data:any}) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className='text-yellow-500 text-lg'>Tu Experiencia</FormLabel>
-              <FormControl>
+              <FormControl className='border-white'>
                 <Input
                   placeholder="Cuentanos un poco de tu experiencia..."
-                  className="resize-none"
+                  className="text-white resize-none"
                   {...field}
                 />
               </FormControl>
-              <FormDescription className='text-lg'>
+              <FormDescription className='text-lg text-white'>
                 Comparte tu experiencia <span className='text-yellow-400 text-xl'>BeeHigh</span> a todo el <span className='text-yellow-500 text-xl'>Crew</span>!
               </FormDescription>
               <FormMessage />
