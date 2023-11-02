@@ -154,7 +154,7 @@ export default function Resenas({data}:{data:any}) {
     </div>
     <p className='text-white p-12 text-2xl'>El Crew <span className='text-yellow-400'>BeeHigh</span></p>
     <div className='p-8 grid grid-cols-2 gap-6'>
-    {data.map((each, index) => (
+    {data.map((each: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined }, index: React.Key | null | undefined) => (
         <div className='w-full'key={index} >
         <Alert className='bg-white rounded-2xl'>
               <div className='flex items-center'>
