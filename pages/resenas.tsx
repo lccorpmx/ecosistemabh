@@ -30,6 +30,7 @@ import { PostgrestSingleResponse, SupabaseClient } from '@supabase/supabase-js'
 
 
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { useRouter } from 'next/router'
 
 
 const profileFormSchema = z.object({
@@ -56,6 +57,17 @@ const defaultValues: Partial<ProfileFormValues> = {
 export default function Resenas({data}:{data:any}) {
   const [loading, setLoading] = useState(false)
   const [resenas, setResenas] = useState<PostgrestSingleResponse<any[]>>()
+  const [inputValue, setInputValue] = useState('')
+   
+
+  const router = useRouter();
+
+  const handleReloadPage = () => {
+    // Utiliza setTimeout para retrasar la recarga de la página en 2 segundos (2000 ms)
+    setTimeout(() => {
+      router.reload();
+    }, 2000);
+  }
  // console.log(resenas)
   // useEffect(() =>{
   //   async function getResenas(){
@@ -94,9 +106,6 @@ export default function Resenas({data}:{data:any}) {
     setLoading(false)
   }
 
-  const handleReloadPage = () => {
-    window.location.reload();
-  }
 
   return (
     <div className='bg-black min-h-screen'>
@@ -145,7 +154,7 @@ export default function Resenas({data}:{data:any}) {
             </FormItem>
           )}
         />
-        <Button type="submit" className='bg-yellow-500 disabled:bg-yellow-500/80' disabled={loading}>Enviar Reseña</Button>
+        <Button type="submit" onClick={handleReloadPage} className='bg-yellow-500 disabled:bg-yellow-500/80' disabled={loading}>Enviar Reseña</Button>
       </form>
     </Form>
 
