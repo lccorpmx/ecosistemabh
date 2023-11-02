@@ -145,7 +145,7 @@ export default function Resenas({data}:{data:any}) {
             </FormItem>
           )}
         />
-        <Button type="submit" onClick={handleReloadPage} className='bg-yellow-500 disabled:bg-yellow-500/80' disabled={loading}>Enviar Reseña</Button>
+        <Button type="submit" className='bg-yellow-500 disabled:bg-yellow-500/80' disabled={loading}>Enviar Reseña</Button>
       </form>
     </Form>
 
