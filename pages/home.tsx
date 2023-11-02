@@ -1,21 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
 import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/abejainicio.png'
 import cumple from '../public/cumple.jpeg'
-import promo from '../public/promo1.jpg'
-import promoUno from '../public/promo2.jpg'
-import promoDos from '../public/promo3.jpg'
-import PCatalogo from '../components/productsCatalogo'
-import SlideShow from '@/components/slideShow';
 import { supabase } from './../lib/supabaseClient';
 import { AiFillYoutube, AiOutlineWhatsApp, AiOutlineInstagram } from 'react-icons/ai';
 import { TbBrandTelegram } from 'react-icons/tb';
-
 
 import {
    Dialog,
@@ -32,11 +24,6 @@ import {
    AccordionItem,
    AccordionTrigger,
  } from "@/components/ui/accordion"
- 
- 
-
-
-
 
 export default function Home( {data}:{data:any}) {
     return (
@@ -55,16 +42,14 @@ export default function Home( {data}:{data:any}) {
             <h1 className='text-6xl text-white'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
             <p className='text-center text-xl p-2 text-white'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
-             <Dialog>
-  <DialogTrigger className='bg-yellow-400 rounded-2xl p-2 text-black'>Click Aqui</DialogTrigger>
-  <DialogContent className='bg-yellow-400 text-black'>
-   <div className='flex justify-center p-2'>
-   <Image src={cumple} alt="Logo" width={1200} className='rounded-xl'/>
-   </div>
-  </DialogContent>
-</Dialog>
-
-            
+            <Dialog>
+               <DialogTrigger className='bg-yellow-400 rounded-2xl p-2 text-black'>Click Aqui</DialogTrigger>
+               <DialogContent className='bg-yellow-400 text-black'>
+                  <div className='flex justify-center p-2'>
+                     <Image src={cumple} alt="Logo" width={1200} className='rounded-xl'/>
+                  </div>
+               </DialogContent>
+            </Dialog>
         </div>
 
         <div className='bg-white p-2 flex flex-col items-center justify-center'>
@@ -91,11 +76,6 @@ export default function Home( {data}:{data:any}) {
                   </Link>
                </div>
             </div>
-        
-
-            
-
-           
         </div>
 
         <div className='p-6 bg-black'>

@@ -49,6 +49,11 @@ function Header() {
        <DownloadButton></DownloadButton>
        <DownloadButtonCDMX></DownloadButtonCDMX>
        <DownloadButtonBeeHeatlhy></DownloadButtonBeeHeatlhy>
+       <div>
+        <Link href="/resenas">
+        <p className="text-xl text-white font-bold pt-6 underline">Resenas</p>
+        </Link>
+       </div>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
