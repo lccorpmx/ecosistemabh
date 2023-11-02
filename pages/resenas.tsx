@@ -155,7 +155,7 @@ export default function Resenas({data}:{data:any}) {
     <p className='text-white p-12 text-2xl'>El Crew <span className='text-yellow-400'>BeeHigh</span></p>
     <div className='p-8 grid grid-cols-2 gap-6'>
     {data.map((each, index) => (
-        <div className='w-full'>
+        <div className='w-full'key={index} >
         <Alert className='bg-white rounded-2xl'>
               <div className='flex items-center'>
               <p className='text-blue-400'> <BsPatchCheckFill className="h-4 w-4 black" /></p>
