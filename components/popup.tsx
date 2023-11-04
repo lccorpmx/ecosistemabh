@@ -41,7 +41,7 @@ const popup = ( { data }: { data: AvisosData[] }) => {
           <div key={index} className="flex justify-center md:items-center items-start w-100 h-100 relative bg-black p-6">
             <Image src={each.linkimage} className="w-full pt-16" height={1080} width={1080} alt="Logo" />
                  <Link href="/home" className="pt-4">
-                   <p className="absolute  top-5 inset-x-1/4 text-center z-10 md:text-2xl text-md bold text-white">Ir a<span className='text-yellow-400'>Inicio</span></p>
+                   <p className="absolute  top-5 inset-x-1/4 text-center z-10 md:text-2xl text-xl bold text-white">Ir a <span className='text-yellow-400'>Inicio</span></p>
       </Link>
           </div>
           
@@ -72,15 +72,6 @@ const popup = ( { data }: { data: AvisosData[] }) => {
           z-index: 1; /* Coloca la flecha por encima del fondo desenfocado */
         }
       `}</style>
-      <div className="flex justify-center">
-      <Link href="/home" className="pt-4">
-        <BotonPersonalizado
-          texto="Continuar"
-          colorF="bg-yellow-400"
-          colorT="text-black"
-        />
-      </Link>
-      </div>
     </div>
   );
 };
