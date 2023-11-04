@@ -148,7 +148,7 @@ export default function Home( {data}:{data:any}) {
          </div>
          </Link>
 
-         <Link href="https://www.instagram.com/bee_highmex/">
+         <Link href="https://www.instagram.com/bee_highmexbackp/">
          <div className='flex flex-col items-center'>
             
             <AiOutlineInstagram className='text-pink-600 text-4xl'></AiOutlineInstagram>
