@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Header from '../components/header'
 import BotonPersonalizado from '../components/BotonPersonalizado'
 import abejaAmarilla from '../public/abejainicio.png'
-import cumple from '../public/cumple.jpeg'
+import cumple from '../public/cumple2.jpeg'
 import { supabase } from './../lib/supabaseClient';
 import { AiFillYoutube, AiOutlineWhatsApp, AiOutlineInstagram } from 'react-icons/ai';
 import { TbBrandTelegram } from 'react-icons/tb';
