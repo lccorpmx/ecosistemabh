@@ -38,7 +38,7 @@ export default function Home( {data}:{data:any}) {
 
 
         <div className='flex flex-col items-center justify-center pt-6 pb-6 bg-black'>
-            <Image src="abejaAmarilla" alt="Logo" width={180}/>
+            <Image src={abejaAmarilla} alt="Logo" width={180}/>
             <h1 className='text-6xl text-white'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
             <p className='text-center text-xl p-2 text-white'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
