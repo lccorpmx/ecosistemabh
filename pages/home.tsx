@@ -38,7 +38,7 @@ export default function Home( {data}:{data:any}) {
 
 
         <div className='flex flex-col items-center justify-center pt-6 pb-6 bg-black'>
-            <Image src="https://zhhxicwoypemcvzpqfgl.supabase.co/storage/v1/object/public/cumple/promoCumpleas.jpg?t=2024-01-24T21%3A42%3A17.543Z" alt="Logo" width={180}/>
+            <Image src="abejaAmarilla" alt="Logo" width={180}/>
             <h1 className='text-6xl text-white'>BEE <span className='text-yellow-400'>HIGH</span></h1>
             <div className="w-2/6 h-2 border border-white rounded-full mt-2 mb-2"></div>
             <p className='text-center text-xl p-2 text-white'>SI ES LA<br/>SEMANA DE <br/>TU CUMPLEAÑOS</p>
@@ -46,7 +46,7 @@ export default function Home( {data}:{data:any}) {
                <DialogTrigger className='bg-yellow-400 rounded-2xl p-2 text-black'>Click Aqui</DialogTrigger>
                <DialogContent className='bg-yellow-400 text-black'>
                   <div className='flex justify-center p-2'>
-                     <Image src={cumple} alt="Logo" width={1200} className='rounded-xl'/>
+                     <Image src="https://zhhxicwoypemcvzpqfgl.supabase.co/storage/v1/object/public/cumple/promoCumpleas.jpg?t=2024-01-24T21%3A42%3A17.543Z" alt="Logo" width={1200} className='rounded-xl'/>
                   </div>
                </DialogContent>
             </Dialog>
