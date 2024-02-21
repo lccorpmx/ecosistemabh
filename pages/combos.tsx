@@ -17,7 +17,7 @@ export default function Combos({data}:{data:any}) {
     <div>
         <Header></Header>
         <div className='relative max-w-md mx-auto'>
-          <SlideShow data={data} title='Kits' title2='BeeHigh'></SlideShow>
+          <SlideShow data={data} title='Combos' title2='BeeHigh'></SlideShow>
         </div>
     </div>
   )
