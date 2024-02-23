@@ -22,16 +22,16 @@ export default function Index( {data}:{data:any}) {
 
 
   return (
-    <div className='p-4 bg-white'>
+    <div className='p-4 bg-black'>
       <Head>
         <title>BeeHigh</title>
         <meta name="description" content="BeeHigh" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <div className='bg-white relative max-w-md mx-auto'>
+      <div className='bg-black min-h-screen relative max-w-md mx-auto'>
         <div className='flex justify-center pb-2'>
           <Link href="/home">
-          <span className='text-yellow-400 text-xl'><span className='text-black'>Ir a </span>Inicio</span>
+          <span className='text-yellow-400 text-xl'><span className='text-white'>Ir a </span>Inicio</span>
           </Link>
         </div>
       <Carousel>

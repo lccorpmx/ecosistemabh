@@ -22,7 +22,7 @@ export default function Combos({data}:{data:any}) {
   return (
         <div>
     <Header></Header>
-    <div className='bg-black relative max-w-md mx-auto pl-14 pr-14 pt-8'>
+    <div className='bg-black min-h-screen relative max-w-md mx-auto pl-14 pr-14 pt-8'>
       <div className='flex justify-center pb-2'>
         <Link href="/home">
         <span className='text-yellow-400 text-xl'><span className='text-white'>Combos</span> BeeHigh</span>
