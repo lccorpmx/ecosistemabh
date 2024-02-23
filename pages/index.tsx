@@ -36,7 +36,7 @@ export default function Index( {data}:{data:any}) {
         </div>
       <Carousel>
   <CarouselContent>
-    {data && data.map((imagen, index) =>
+    {data && data.map((imagen:any, index:number) =>
         <CarouselItem key={index}><Image src={imagen.linkimage} className="w-full" height={1080} width={1080} alt="Logo" /></CarouselItem>
     )}
   </CarouselContent>
