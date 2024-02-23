@@ -28,7 +28,7 @@ export default function Index( {data}:{data:any}) {
         <meta name="description" content="BeeHigh" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      <div className='bg-black relative max-w-md mx-auto p-12'>
+      <div className='bg-black relative max-w-md mx-auto'>
         <div className='flex justify-center pb-2'>
           <Link href="/home">
           <span className='text-yellow-400 text-xl'><span className='text-white'>Ir a </span>Inicio</span>
