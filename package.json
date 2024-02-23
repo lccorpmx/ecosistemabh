@@ -23,6 +23,7 @@
     "@types/react-dom": "18.0.11",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "embla-carousel-react": "^8.0.0-rc23",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "js": "^0.1.0",
