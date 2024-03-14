@@ -156,7 +156,7 @@ export default function Home( {data}:{data:any}) {
          </div>
          </Link>
 
-         <Link href="https://www.instagram.com/beehighmex/">
+         <Link href="https://www.instagram.com/beehigh_mx/">
          <div className='flex flex-col items-center'>
             
             <AiOutlineInstagram className='text-pink-600 text-4xl'></AiOutlineInstagram>
