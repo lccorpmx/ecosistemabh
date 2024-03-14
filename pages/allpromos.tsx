@@ -30,9 +30,9 @@ export default function allpromos({data}:{data:any}) {
           </Link>
         </div>
       <Carousel>
-      <CarouselContent>
+      <CarouselContent >
         {data && data.map((imagen: any, index:number) =>
-            <CarouselItem key={index}><Image src={imagen.urlimage} className="w-full" height={1080} width={1080} alt="Logo" /></CarouselItem>
+            <CarouselItem key={index}><Image src={imagen.urlimage} className="w-full rounded-lg" height={1080} width={1080} alt="Logo" /></CarouselItem>
         )}
       </CarouselContent>
       <CarouselPrevious />
@@ -44,8 +44,7 @@ export default function allpromos({data}:{data:any}) {
               <div className="flex justify-center items-center p-2">
                 <div>
                 <Image
-                  className='rounded-full'
-                  src={'/wa.png'}
+                   src={'/wa.png'}
                   alt='Mi imagen'
                   width={30}
                   height={30}
